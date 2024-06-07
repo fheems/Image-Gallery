@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes Gallery</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- header below  -->
+    <header>
+        <nav>
+    <!-- logo below  -->
+            <div class="logo">
+                <img src="images/LOGO.jpeg" alt="Logo">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>GALLERY</h1>
+        <!-- ascending and descending buttons below  -->
+        <div class="controls">
+            <button class="sort-asc" onclick="sortImages('asc')">Sort Ascending</button>
+            <button class="sort-desc" onclick="sortImages('desc')">Sort Descending</button>
+        </div>
+    
+        <div class="gallery" id="gallery">
+            <!-- Images will be populated here from script.js -->
+        </div>
+    </main>
+    <!-- lightbox which when image is clicked it expands  -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+    <!-- footer below  -->
+    <footer>
+        <p> © 2024 by fheems. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
